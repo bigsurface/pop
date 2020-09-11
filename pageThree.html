@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+    <style>
+        
+        body {
+            background-image: url('img-sq/blinks.jpg'); 
+            background-size: cover;
+            text-align: center;
+        }
+        
+        a {
+            margin-left:50px;
+            margin-top: 10px;
+        }
+
+        .wrapper {
+            width: 400px;
+            margin-left: 200px;
+            margin-top: 100px;         
+        }
+
+        .wrapper2 {
+            width: 400px;
+            margin-left: 200px;
+            margin-top: 100px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .rainbow1redarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 300px solid red;
+        }
+
+        .rainbow1orangearch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 250px solid orange;
+        }
+
+        .rainbow1yellowarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 200px solid yellow;
+        }
+
+        .rainbow1greenarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 150px solid green;
+        }
+
+        .rainbow1bluearch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 100px solid blue;
+        }
+
+        .rainbow1indigoarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 50px solid indigo;
+        }
+
+        .rainbow1violetarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 10px solid violet;
+        }
+
+        .rainbow2redarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 250px solid red;
+        }
+
+        .rainbow2orangearch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 200px solid orange;
+        }
+
+        .rainbow2yellowarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 150px solid yellow;
+        }
+
+        .rainbow2greenarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 100px solid green;
+        }
+
+        .rainbow2bluearch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 50px solid blue;
+        }
+
+        .rainbow2indigoarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 10px solid indigo;
+        }
+
+        .rainbow2violetarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 5px solid violet;
+        }
+
+        .rainbow3redarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 200px solid red;
+        }
+
+        .rainbow3orangearch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 150px solid orange;
+        }
+
+        .rainbow3yellowarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 100px solid yellow;
+        }
+
+        .rainbow3greenarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 50px solid green;
+        }
+
+        .rainbow3bluearch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 10px solid blue;
+        }
+
+        .rainbow3indigoarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 5px solid indigo;
+        }
+
+        .rainbow3violetarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 2px solid violet;
+        }
+
+        .rainbow4redarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 150px solid red;
+        }
+
+        .rainbow4orangearch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 100px solid orange;
+        }
+
+        .rainbow4yellowarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 70px solid yellow;
+        }
+
+        .rainbow4greenarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 10px solid green;
+        }
+
+        .rainbow4bluearch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 5px solid blue;
+        }
+
+        .rainbow4indigoarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 2px solid indigo;
+        }
+
+        .rainbow4violetarch {
+            width: 0px;
+            height: 0px;
+            border-radius: 50px;
+            border: 1px solid violet;
+        }
+
+        .bubble1 {
+            background-image: url('img-sq/bubble.jpg');
+            float:right;width:232px;height:200px;
+            
+        }
+
+        .bubble2 {
+            background-image: transparent url('img-sq/bubble.jpg');
+            float:right;width:398px;height:200px;
+            
+        }
+
+        .topbase{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 4px solid rgb(80, 76, 75);
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            margin-left: 240px;
+            margin-top: 196px;
+        }
+
+        .lefttriangle{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            margin-top: 135px;
+            margin-left: 244px;
+            border-bottom: 45px solid rgb(55, 54, 50);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+
+        .graywallleft{
+            width: 40px;
+            height: 22px;
+            position: absolute;
+            background-color: rgb(135, 139, 148);
+            margin-left: 260px;
+            margin-top: 158px;
+        }
+
+        .doorwallleftshadow{
+            width: 10px;
+            height: 12px;
+            position: absolute;
+            background-color: rgb(70, 68, 69);
+            margin-left: 274px;
+            margin-top: 168px;
+        }
+
+        .doorwallleft{
+            height: 8px;
+            width: 8px;
+            position: absolute;
+            background-color: rgb(16, 14, 15);
+            margin-left: 274px;
+            margin-top: 170px;
+        }
+
+        .graywallright{
+            width: 40px;
+            height: 22px;
+            position: absolute;
+            background-color: rgb(92, 99, 115);
+            margin-left: 300px;
+            margin-top: 158px;
+        }
+
+        .doorwallrightshadow{
+            width: 10px;
+            height: 12px;
+            position: absolute;
+            background-color: rgb(51, 55, 64);
+            margin-left: 315px;
+            margin-top: 168px;
+        }
+
+        .doorwallright{
+            height: 8px;
+            width: 8px;
+            position: absolute;
+            background-color: rgb(8, 12, 21);
+            margin-left: 315px;
+            margin-top: 170px;
+        }
+
+        .leftspire{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 90px solid rgb(135, 139, 142);
+            border-left: 35px solid transparent;
+            margin-left: 264px;
+            margin-top: 68px;
+        }
+
+        .rightspire{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 90px solid rgb(75, 92, 102);
+            border-right: 37px solid transparent;
+            margin-left: 299px;
+            margin-top: 68px;
+        }
+
+        .darkbandleft{
+            width: 6px;
+            height: 3px;
+            position: absolute;
+            background-color: rgb(66, 79, 87);
+            margin-left: 294px;
+            margin-top: 75px;
+        }
+
+        .darkbandright{
+            width: 5px;
+            height: 3px;
+            position: absolute;
+            background-color: rgb(22, 41, 48);
+            margin-left: 299px;
+            margin-top: 75px;
+        }
+
+        .spirebase{
+            width: 10px;
+            height: 3px;
+            position: absolute;
+            background-color: rgb(0, 9, 8);
+            margin-left: 294px;
+            margin-top: 73px;
+        }
+
+        .lantern{
+            width: 80px;
+            height: 100px;
+            position: absolute;
+            background-color: rgb(76, 78, 75);
+            background: linear-gradient(270deg, rgba(123, 136, 141, 1) 0%, rgba(232, 230, 225, 1) 17%, rgba(123, 136, 141, 1) 100%);
+            margin-left: 295px;
+            margin-top: 40px;
+        }
+
+        .lanterntop{
+            width: 6px;
+            height: 0px;
+            position: absolute;
+            border: 40px solid rgb(31, 35, 34);
+            border-radius: 50%;
+            margin-left: 293px;
+            margin-top: 57px;
+        }
+
+        .spire{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 200px solid rgb(31, 35, 34);
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            margin-left: 331px;
+            margin-top: 37px;
+        }
+
+        .spirecircle{
+            width: 4px;
+            height: 0px;
+            position: absolute;
+            border: 10px solid rgb(31, 35, 34);
+            border-radius: 50%;
+            margin-left: 296px;
+            margin-top: 50px;
+        }
+
+        .wallroof{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 4px solid rgb(115, 118, 123);
+            border-left: 42px solid transparent;
+            border-right: 42px solid transparent;
+            margin-left: 258px;
+            margin-top: 154px;
+        }
+
+        .middletriangle{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 45px solid rgb(72, 72, 74);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            margin-left: 295px;
+            margin-top: 131px;
+        }
+
+        .righttriangle{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            margin-top: 135px;
+            margin-left: 346px;
+            border-bottom: 45px solid rgb(42, 45, 54);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+
+        .trianglebase{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 4px solid rgb(78, 76, 77);
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            margin-left: 240px;
+            margin-top: 176px;
+        }
+
+        .spire2{
+            width: 1000px;
+            height: 100px;
+            position: absolute;
+            border-bottom: 200px solid transparent rgb(31, 35, 34);
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            margin-left: 1000px;
+            margin-top: 37px;
+            background-image: url('img-sq/bubble.jpg');
+        }
+
+        .spire3{
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-bottom: 200px solid rgb(31, 35, 34);
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            margin-left: 1000px;
+            margin-top: 37px;
+            background-image: transparent url('img-sq/bubble.jpg');
+
+    </style>
+
+
+
+    <title>DoubleRainbow!</title>
+</head>
+<body onclick="changeImage()">
+    
+    <nav class="ui three item menu">
+
+        <a class="item" href="index.html">RainbowPi</a>
+        <a class="item" href="pageTwo.html">RainbowPour</a>
+        <a class="item" href="pageThree.html">DoubleRainbow!</a>
+
+    </nav>
+
+    <div class="wrapper">
+        <img src="img-sq/blinks.jpg" alt="">
+        Clicks
+    </div>
+
+    <div class="wrapper2">
+        <img src="img-sq/blinks.jpg" alt="">
+        Doesn't Click
+    </div>
+
+    <div class="rainbow1redarch">
+        <div class="rainbow1orangearch">
+            <div class="rainbow1yellowarch">
+                 <div class="rainbow1greenarch">
+                    <div class="rainbow1bluearch">
+                        <div class="rainbow1indigoarch">
+                            <div class="rainbow1violetarch"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rainbow2redarch">
+        <div class="rainbow2orangearch">
+            <div class="rainbow2yellowarch">
+                 <div class="rainbow2greenarch">
+                    <div class="rainbow2bluearch">
+                        <div class="rainbow2indigoarch">
+                            <div class="rainbow2violetarch"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rainbow3redarch">
+        <div class="rainbow3orangearch">
+            <div class="rainbow3yellowarch">
+                 <div class="rainbow3greenarch">
+                    <div class="rainbow3bluearch">
+                        <div class="rainbow3indigoarch">
+                            <div class="rainbow3violetarch"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rainbow4redarch">
+        <div class="rainbow4orangearch">
+            <div class="rainbow4yellowarch">
+                 <div class="rainbow4greenarch">
+                    <div class="rainbow4bluearch">
+                        <div class="rainbow4indigoarch">
+                            <div class="rainbow4violetarch"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bubble1">
+    </div>
+
+    <div class="bubble2">
+        <h3>.--. --- .--. pop .--. --- .--.</h3>
+    </div>
+
+    <div class="topbase"></div>
+    <div class="lefttriangle"></div>
+    <div class="graywallleft"></div>
+    <div class="doorwallleftshadow"></div>
+    <div class="doorwallleft"></div>
+    <div class="graywallright"></div>
+    <div class="doorwallrightshadow"></div>
+    <div class="doorwallright"></div>
+    <div class="leftspire"></div>
+    <div class="rightspire"></div>
+    <div class="darkbandleft"></div>
+    <div class="darkbandright"></div>
+    <div class="spirebase"></div>
+    <div class="lantern"></div>
+    <div class="lanterntop"></div>
+    <div class="spire"></div>
+    <div class="spirecircle"></div>
+    <div class="wallroof"></div>
+    <div class="middletriangle"></div>
+    <div class="righttriangle"></div>
+    <div class="trianglebase"></div>
+    <div class="spire2"></div>
+    <div class="spire3"></div>
+
+<script>
+
+
+const pathNames = [
+        'img-sq/blinks.jpg',
+        'img-sq/cup.jpg',
+        'img-sq/keyboard.jpg',
+        'img-sq/marines.jpg',
+        'img-sq/monitor.jpg',
+        'img-sq/mousepad.jpg',
+        'img-sq/paper.jpg',
+        'img-sq/pattern.jpg',
+        'img-sq/sonic.jpg',
+        'img-sq/1.jpg',
+        'img-sq/2.jpg',
+        'img-sq/3.jpg',
+        'img-sq/4.jpg',
+        'img-sq/5.jpg',
+        'img-sq/6.jpg',
+        'img-sq/7.jpg',
+        'img-sq/8.jpg',
+        'img-sq/9.jpg',
+        'img-sq/10.jpg',
+        'img-sq/11.jpg',
+        'img-sq/12.jpg',
+        'img-sq/13.jpg',
+    ];
+
+const myImageElement = document.body.querySelector('img');
+myImageElement.src = `${pathNames[1]}`;
+
+const changeImage = () => {
+
+    myImageElement.src = `${pathNames[Math.floor(Math.random()*pathNames.length)]}`;
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>
